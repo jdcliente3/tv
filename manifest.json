@@ -1,19 +1,16 @@
 {
-  "id": "iptv-cordcutter",
-  "name": "Meu IPTV Cord Cutter",
+  "id": "iptv-cordcutter-catalog",
+  "name": "Meu IPTV Catalog",
   "version": "1.0.0",
-  "description": "Add-on personalizado para stream IPTV",
+  "description": "Add-on com catálogo para streams IPTV",
   "types": ["movie", "series"],
-  "resources": ["stream"],
-  "catalogs": [],
-  "idPrefixes": ["tt"],
-  "behaviorHints": {
-    "configurable": false
-  },
-  "streams": [
+  "resources": ["catalog", "stream"],
+  "catalogs": [
     {
-      "title": "Canal IPTV",
-      "url": "http://cord-cutter.net:8080/bo1904706@gmail.com/b7QadZgQdW/164850"
+      "id": "iptv-channels",
+      "type": "movie",
+      "name": "Canais IPTV"
     }
-  ]
+  ],
+  "idPrefixes": ["iptv"]
 }
