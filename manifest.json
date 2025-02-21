@@ -3,7 +3,7 @@
   "name": "Meu IPTV Catalog",
   "version": "1.0.0",
   "description": "Add-on com catálogo para streams IPTV",
-  "types": ["movie", "series"],
+  "types": ["movie"],
   "resources": ["catalog", "stream"],
   "catalogs": [
     {
@@ -12,5 +12,21 @@
       "name": "Canais IPTV"
     }
   ],
-  "idPrefixes": ["iptv"]
+  "idPrefixes": ["iptv"],
+  "catalog": [
+    {
+      "id": "iptv:channel1",
+      "type": "movie",
+      "name": "Canal IPTV 1",
+      "poster": "https://via.placeholder.com/300x450",
+      "description": "Um canal IPTV ao vivo"
+    }
+  ],
+  "streams": [
+    {
+      "id": "iptv:channel1",
+      "title": "Canal IPTV 1",
+      "url": "http://cord-cutter.net:8080/bo1904706@gmail.com/b7QadZgQdW/164850"
+    }
+  ]
 }
